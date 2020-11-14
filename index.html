@@ -114,7 +114,7 @@
                 <ul>
                   <li v-for="item in work" :key="item.label">
                     <div class="title">{{ item.title }}</div>
-                    <div class="info"><div class="squeeze"><i>{{ item.info }}</i></div></div>
+                    <div class="info"><div class="squeeze">{{ item.info }}</div></div>
                   </li>
                 </ul>
               </div>
@@ -126,7 +126,7 @@
                 <ul>
                   <li v-for="item in edu" :key="item.label">
                     <div class="title">{{ item.title }}</div>
-                    <div class="info"><div class="squeeze"><i>{{ item.info }}</i></div></div>
+                    <div class="info"><div class="squeeze">{{ item.info }}</div></div>
                   </li>
                 </ul>
               </div>
@@ -262,10 +262,10 @@
               translateZ:'15px'
             })
             gsap.to('.workSection', {
-              translateZ:'35px'
+              translateZ:'55px'
             })
             gsap.to('.eduSection', {
-              translateZ:'35px'
+              translateZ:'55px'
             })
           }
         },

@@ -26,7 +26,7 @@ body{background-color: #D1D1D1;perspective: 1000px;}
 .txtCenter{width: 100%;text-align: center;}
 .name{font-size: 2.25rem;font-weight: bold;margin: 20px 0 5px;text-shadow: 0 10px 10px rgba(0,0,0,.3);}
 .title{font-size: .82rem;margin: 0 0 5px;text-shadow: 0 5px 10px rgba(0,0,0,.3);}
-.data,.workSection,.eduSection{overflow: hidden;width: 60%;text-shadow: 0 10px 10px rgba(0,0,0,.3);}
+.data,.workSection,.eduSection{overflow: hidden;width: 61%;text-shadow: 0 10px 10px rgba(0,0,0,.3);}
 .skill{font-size: 1.35rem;font-weight: bold;margin: 10px 0 0;}
 .gap{height: 1px;width: 100%;position: relative;margin: 5px auto; border-bottom:1px solid #333;}
 .gap::before{content:'';display:block;height: 5px;width: 5px;border-radius: 50%; background-color: #333;position: absolute;left: 0;top:-1.5px;}
@@ -74,7 +74,7 @@ body{background-color: #D1D1D1;perspective: 1000px;}
   -ms-transform:rotateY(180deg);
   -o-transform:rotateY(180deg);
 }
-.flipBtn{ transform-style: preserve-3d; border-radius: 50%; width: 2.19rem; height: 2.19rem; display: flex; align-items: center; position: absolute; box-shadow: 0 10px 10px rgba(0,0,0,.3); cursor: pointer; transform:translateY(330px) ; -webkit-transform:; -moz-transform:; -ms-transform:; -o-transform:; }
+.flipBtn{ transform-style: preserve-3d; border-radius: 50%; width: 2.19rem; height: 2.19rem; display: flex; align-items: center; position: absolute; box-shadow: 0 10px 10px rgba(0,0,0,.3); cursor: pointer; transform:translateY(330px) ; -webkit-transform:translateY(330px) ; -moz-transform:translateY(330px) ; -ms-transform:translateY(330px) ; -o-transform:translateY(330px) ; }
 .flipBtn .icon{width: 1.2rem;height: 1.2rem;}
 .flipBtn.black{background-color: #333;}
 .flipBtn.black:hover,.flipBtn.white:hover{ background-color: #666; transform:translateY(330px) rotateY(20deg) ; -webkit-transform:translateY(330px) rotateY(20deg) ; -moz-transform:translateY(330px) rotateY(20deg) ; -ms-transform:translateY(330px) rotateY(20deg) ; -o-transform:translateY(330px) rotateY(20deg) ; }
@@ -85,14 +85,15 @@ body{background-color: #D1D1D1;perspective: 1000px;}
 /*back*/
 /* .workSection .title,.workSection .info,.eduSection .title,.eduSection .info{text-shadow: none;} */
 .workSection .title,.eduSection .title{font-size: 1rem;position: relative;}
-.workSection .info .squeeze,.eduSection .info .squeeze{ color: #666; font-size: .65rem; font-weight: lighter; transform:scale(.8) translateX(-12%) ; -webkit-transform:scale(.8) translateX(-12%) ; -moz-transform:scale(.8) translateX(-12%) ; -ms-transform:scale(.8) translateX(-12%) ; -o-transform:scale(.8) translateX(-12%) ;white-space: nowrap;}
-.listArea li{position: relative;padding: 10px 0 14px 20px;}
+.workSection .info .squeeze,.eduSection .info .squeeze{text-shadow: none; color: #666; font-size: .65rem; transform:scale(.8) translateX(-12%) ; -webkit-transform:scale(.8) translateX(-12%) ; -moz-transform:scale(.8) translateX(-12%) ; -ms-transform:scale(.8) translateX(-12%) ; -o-transform:scale(.8) translateX(-12%) ;white-space: nowrap;}
+.listArea li{position: relative;padding: 10px 0 5px 20px;}
 .workSection .listArea li:last-child{margin-top: -2px;}
 .workSection .listArea li:last-child::after{position: absolute;left:2px;bottom:0; content: ''; width: 5px; height: 5px; background-color: #333;}
 .listArea li::before{position: absolute;content: '';height: 86%;width: 1px;border-right: 1px solid #333;top: 25px;left: 3px;}
 .listArea .title::before{ position: absolute;left:-17px;top:8px; content: ''; width: 4px; height: 4px; background-color: #333; border-radius:50% ; -webkit-border-radius:50% ; -moz-border-radius:50% ; -ms-border-radius:50% ; -o-border-radius:50% ; }
 .listArea .title::after{ position: absolute;left:-20px;top:5px; content: ''; width: 8px; height: 8px;border: 1px solid #333; background-color: transparent; border-radius:50% ; -webkit-border-radius:50% ; -moz-border-radius:50% ; -ms-border-radius:50% ; -o-border-radius:50% ; }
-.eduSection .info:last-child .squeeze{white-space:normal;}
+.workSection li:first-child .squeeze{white-space:break-spaces;}
+.eduSection .info:last-child .squeeze{white-space:break-spaces;}
 .eduSection .listArea li:last-child::before{display: none;}
 
 @media screen and (max-width: 376px) {
