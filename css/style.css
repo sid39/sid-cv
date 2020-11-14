@@ -74,10 +74,10 @@ body{background-color: #D1D1D1;perspective: 1000px;}
   -ms-transform:rotateY(180deg);
   -o-transform:rotateY(180deg);
 }
-.flipBtn{transform-style: preserve-3d;border-radius: 50%;width: 2.19rem;height: 2.19rem;display: flex;align-items: center;position: absolute;margin-top: 650px;box-shadow: 0 10px 10px rgba(0,0,0,.3);cursor: pointer;}
+.flipBtn{ transform-style: preserve-3d; border-radius: 50%; width: 2.19rem; height: 2.19rem; display: flex; align-items: center; position: absolute; box-shadow: 0 10px 10px rgba(0,0,0,.3); cursor: pointer; transform:translateY(330px) ; -webkit-transform:; -moz-transform:; -ms-transform:; -o-transform:; }
 .flipBtn .icon{width: 1.2rem;height: 1.2rem;}
 .flipBtn.black{background-color: #333;}
-.flipBtn.black:hover,.flipBtn.white:hover{ background-color: #666; transform:rotateY(20deg) ; -webkit-transform:rotateY(20deg) ; -moz-transform:rotateY(20deg) ; -ms-transform:rotateY(20deg) ; -o-transform:rotateY(20deg) ; transform-origin: center center; }
+.flipBtn.black:hover,.flipBtn.white:hover{ background-color: #666; transform:translateY(330px) rotateY(20deg) ; -webkit-transform:translateY(330px) rotateY(20deg) ; -moz-transform:translateY(330px) rotateY(20deg) ; -ms-transform:translateY(330px) rotateY(20deg) ; -o-transform:translateY(330px) rotateY(20deg) ; }
 .flipBtn.black .icon{fill:#fff;}
 .flipBtn.white{background-color: #fff;}
 .flipBtn.white .icon{fill:#333;}
@@ -85,7 +85,7 @@ body{background-color: #D1D1D1;perspective: 1000px;}
 /*back*/
 /* .workSection .title,.workSection .info,.eduSection .title,.eduSection .info{text-shadow: none;} */
 .workSection .title,.eduSection .title{font-size: 1rem;position: relative;}
-.workSection .info .squeeze,.eduSection .info .squeeze{ color: #666; font-size: .5rem; font-weight: lighter; transform:scale(.8) translateX(-12%) ; -webkit-transform:scale(.8) translateX(-12%) ; -moz-transform:scale(.8) translateX(-12%) ; -ms-transform:scale(.8) translateX(-12%) ; -o-transform:scale(.8) translateX(-12%) ;white-space: nowrap;}
+.workSection .info .squeeze,.eduSection .info .squeeze{ color: #666; font-size: .65rem; font-weight: lighter; transform:scale(.8) translateX(-12%) ; -webkit-transform:scale(.8) translateX(-12%) ; -moz-transform:scale(.8) translateX(-12%) ; -ms-transform:scale(.8) translateX(-12%) ; -o-transform:scale(.8) translateX(-12%) ;white-space: nowrap;}
 .listArea li{position: relative;padding: 10px 0 14px 20px;}
 .workSection .listArea li:last-child{margin-top: -2px;}
 .workSection .listArea li:last-child::after{position: absolute;left:2px;bottom:0; content: ''; width: 5px; height: 5px; background-color: #333;}
