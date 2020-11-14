@@ -92,7 +92,7 @@ body{background-color: #D1D1D1;perspective: 1000px;}
 .listArea li::before{position: absolute;content: '';height: 86%;width: 1px;border-right: 1px solid #333;top: 25px;left: 3px;}
 .listArea .title::before{ position: absolute;left:-17px;top:8px; content: ''; width: 4px; height: 4px; background-color: #333; border-radius:50% ; -webkit-border-radius:50% ; -moz-border-radius:50% ; -ms-border-radius:50% ; -o-border-radius:50% ; }
 .listArea .title::after{ position: absolute;left:-20px;top:5px; content: ''; width: 8px; height: 8px;border: 1px solid #333; background-color: transparent; border-radius:50% ; -webkit-border-radius:50% ; -moz-border-radius:50% ; -ms-border-radius:50% ; -o-border-radius:50% ; }
-.workSection li:first-child .squeeze{white-space:break-spaces;}
+.workSection li:last-child .squeeze{white-space:break-spaces;}
 .eduSection .info:last-child .squeeze{white-space:break-spaces;}
 .eduSection .listArea li:last-child::before{display: none;}
 
