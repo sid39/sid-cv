@@ -1,0 +1,37 @@
+<svg width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 23" id="flip">
+    <title>Combined Shape</title>
+    <defs>
+      <filter x="0%" y="0%" width="100%" height="100%" filterUnits="objectBoundingBox" id="a">
+        <feGaussianBlur in="SourceGraphic"></feGaussianBlur>
+      </filter>
+    </defs>
+    <path d="M720.784 949.751v2.602l9.994-1.788v-.814h2.104v1.725c0 .486-.313.906-.758 1.039l-.114.027-12.097 2.164c-.603.108-1.159-.333-1.226-.942l-.006-.124v-3.889h2.103zm-3.977-10.617v2.164c-.938.237-1.631 1.07-1.631 2.063 0 1.125.89 2.047 2.02 2.125l.155.005h4.737v-1.988l4.545 2.84-4.544 2.84-.001-1.562h-4.737c-2.332 0-4.236-1.796-4.346-4.053l-.005-.207c0-2.172 1.66-3.965 3.807-4.227zm16.075 4.936h-2.104v-8.415l-9.994-1.34v9.755h-2.103v-10.988c0-.612.49-1.094 1.07-1.082l.118.01 12.097 1.622c.484.065.855.461.91.95l.006.123-.001 4.395h1.33c2.403 0 4.351 1.908 4.351 4.261 0 2.284-1.835 4.148-4.14 4.256l-.21.005-5.44-.001v-2.13h5.44c1.149 0 2.09-.872 2.17-1.978l.005-.152c0-1.125-.891-2.047-2.02-2.125l-.156-.005-1.33-.001v2.84z" filter="url(#a)" transform="translate(-713 -932)" fill="#FFF" fill-rule="evenodd"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 16" id="frontend">
+    <title>Group 8</title>
+    <g fill="none" fill-rule="evenodd">
+      <path d="M28.188 8.062a.75.75 0 01-.215.368l-6.45 6.121a.836.836 0 01-1.138 0 .737.737 0 010-1.08l5.884-5.584-5.883-5.583a.737.737 0 010-1.08.836.836 0 011.139 0l6.45 6.121a.738.738 0 01.213.717h0zm-27.718 0a.691.691 0 01.239-.717l7.166-6.121c.35-.299.915-.299 1.265 0a.688.688 0 010 1.08L2.604 7.887l6.537 5.584a.688.688 0 010 1.08c-.35.299-.916.299-1.265 0L.71 8.43a.738.738 0 01-.24-.368h0z" stroke="#000" stroke-width=".5" fill="#323233"></path>
+      <path stroke="#323233" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M16.951 1l-4.626 13.775"></path>
+    </g>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 28" id="uiux">
+    <title>Group 12</title>
+    <g transform="translate(1 1)" fill="none" fill-rule="evenodd">
+      <circle fill="#BBB" cx="1.94" cy="2.586" r="1"></circle>
+      <path d="M8.836 11.207a3.448 3.448 0 006.897 0" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      <circle fill="#BBB" cx="22.629" cy="2.586" r="1"></circle>
+      <circle fill="#BBB" cx="1.94" cy="24.138" r="1"></circle>
+      <circle fill="#BBB" cx="22.629" cy="24.138" r="1"></circle>
+      <path stroke="#000" stroke-width="2" stroke-linejoin="round" d="M5.388 6.034h13.793v13.793H5.388z"></path>
+      <path stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M19.181 22.414V25M5.819 22.845v2.586m13.362-25v2.586M5.819.431v2.586M21.983 6.25h2.586m-2.155 13.362H25M0 6.25h2.586M0 19.612h2.586"></path>
+    </g>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 31" id="video">
+    <title>Group 11</title>
+    <g stroke="#323233" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+      <path d="M16.875 7.662L4.219 14.297V1.027z"></path>
+      <path d="M1.125 21.537h3.75m4.688 0H18M5.813 23.665V19.41M18 27.497h-3.75m-4.688 0H1.125m12.187 2.128v-4.256" stroke-linecap="round"></path>
+    </g>
+  </symbol>
+</svg>
