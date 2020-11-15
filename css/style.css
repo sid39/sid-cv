@@ -25,8 +25,8 @@ body{background-color: #D1D1D1;perspective: 1000px;}
 .transition{-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-o-transition:all .5s ease;transition:all .5s ease;}
 .txtCenter{width: 100%;text-align: center;}
 .name{font-size: 2.25rem;font-weight: bold;margin: 20px 0 5px;text-shadow: 0 10px 10px rgba(0,0,0,.3);}
-.title{font-size: .82rem;margin: 0 0 5px;text-shadow: 0 5px 10px rgba(0,0,0,.3);}
-.data,.workSection,.eduSection{overflow: hidden;width: 61%;text-shadow: 0 10px 10px rgba(0,0,0,.3);}
+.title{font-size: .82rem;margin: 0 0 5px;text-shadow: 0 5px 10px rgba(0,0,0,.2);}
+.data,.workSection,.eduSection{overflow: hidden;width: 61%;text-shadow: 0 10px 10px rgba(0,0,0,.2);}
 .skill{font-size: 1.35rem;font-weight: bold;margin: 10px 0 0;}
 .gap{height: 1px;width: 100%;position: relative;margin: 5px auto; border-bottom:1px solid #333;}
 .gap::before{content:'';display:block;height: 5px;width: 5px;border-radius: 50%; background-color: #333;position: absolute;left: 0;top:-1.5px;}
@@ -87,7 +87,7 @@ body{background-color: #D1D1D1;perspective: 1000px;}
 /*back*/
 /* .workSection .title,.workSection .info,.eduSection .title,.eduSection .info{text-shadow: none;} */
 .workSection .title,.eduSection .title{font-size: 1rem;position: relative;}
-.workSection .info .squeeze,.eduSection .info .squeeze{text-shadow: none; color: #666; font-size: .65rem; transform:scale(.8) translateX(-12%) ; -webkit-transform:scale(.8) translateX(-12%) ; -moz-transform:scale(.8) translateX(-12%) ; -ms-transform:scale(.8) translateX(-12%) ; -o-transform:scale(.8) translateX(-12%) ;white-space: nowrap;}
+.workSection .info .squeeze,.eduSection .info .squeeze{ text-shadow: none; color: #666; font-size: 12px; transform:scale(.8) translateX(-12%) ; -webkit-transform:scale(.8) translateX(-12%) ; -moz-transform:scale(.8) translateX(-12%) ; -ms-transform:scale(.8) translateX(-12%) ; -o-transform:scale(.8) translateX(-12%) ; white-space: nowrap; }
 .listArea li{position: relative;padding: 10px 0 5px 20px;}
 .workSection .listArea li:last-child{margin-top: -2px;}
 .workSection .listArea li:last-child::after{position: absolute;left:2px;bottom:0; content: ''; width: 5px; height: 5px; background-color: #333;}
