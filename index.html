@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
   <head>
     <meta charset="utf-8">
@@ -48,15 +48,26 @@
         </g>
       </symbol>
     </svg>
-    <div id="app">
+    <div id="app" :class="darkMode?'darkMode':''">
       <div class="cardContainer" @mousemove="updateCoordinates">
+        <div class="switch">
+          <label for="toggle_button" class="toggle_button">
+            <span v-if="isActive" class="toggle__label">Dark Mode</span>
+            <span v-if="!isActive" class="toggle__label">Light Mode</span>
+    
+            <input type="checkbox" id="toggle_button" v-model="darkMode">
+            <span class="toggle__switch"></span>
+          </label>
+        </div>
         <div class="outter hideBack">
           <div class="card front hideBack">
             <section class="portrait">
+              <div class="devil hideBack" :class="darkMode?'show':''"></div>
+              <div class="eyes hideBack" :class="darkMode?'show':''"></div>
               <figure>
                 <img src="./images/sid-portrait.png"
                     alt="Sid"
-                    class="portraitImg">
+                    class="portraitImg hideBack">
               </figure>
               <figure>
                 <img src="./images/sid-head.png"
@@ -148,6 +159,7 @@
         el: '#app',
         data: {
           askFlip:false,
+          darkMode:false,
           front:true,
           id:['#video','#uiux','#frontend'],
           getTypePrev:'#video',
@@ -245,7 +257,6 @@
             }
           },
           goTip(show){
-            console.log(show);
             show === 'on' ? this.askFlip = true : this.askFlip = false
           },
           updateCoordinates: function(e) {
@@ -280,7 +291,20 @@
         },
         updated() {
           this.runData()
-        }
+        },
+        computed: {
+          isActive() {
+              return this.darkMode;
+          },
+          checkedValue: {
+              get() {
+                  return this.defaultState
+              },
+              set(newValue) {
+                  this.darkMode = newValue;
+              }
+            }
+          }
       })
     </script>
   </body>
