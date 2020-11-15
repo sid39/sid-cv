@@ -83,7 +83,7 @@ body{background-color: #D1D1D1;perspective: 1000px;}
 .flipBtn.black .icon{fill:#fff;}
 .flipBtn.white{background-color: #fff;}
 .flipBtn.white .icon{fill:#333;}
-.tip{ position: absolute; top: -17px; left: -4px; font-size: 12px; white-space: nowrap; transform:scale(.75) rotateY(-10deg) ; -webkit-transform:scale(.75) rotateY(-10deg) ; -moz-transform:scale(.75) rotateY(-10deg) ; -ms-transform:scale(.75) rotateY(-10deg) ; -o-transform:scale(.75) rotateY(-10deg) ; }
+.tip{ position: absolute; top: -17px; left: -9px; font-size: 12px; white-space: nowrap; transform:scale(.75) rotateY(-10deg) ; -webkit-transform:scale(.75) rotateY(-10deg) ; -moz-transform:scale(.75) rotateY(-10deg) ; -ms-transform:scale(.75) rotateY(-10deg) ; -o-transform:scale(.75) rotateY(-10deg) ; }
 /*back*/
 /* .workSection .title,.workSection .info,.eduSection .title,.eduSection .info{text-shadow: none;} */
 .workSection .title,.eduSection .title{font-size: 1rem;position: relative;}
