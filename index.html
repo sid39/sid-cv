@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
-  <body :class="darkMode?'darkMode':''">
+  <body>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -284,10 +284,14 @@
             gsap.to('.eduSection', {
               translateZ:'55px'
             })
+          },
+          bodyBgColor(){
+            this.darkMode ? document.body.className = 'darkMode':''
           }
         },
         mounted() {
           this.runData()
+          this.bodyBgColor()
         },
         updated() {
           this.runData()
