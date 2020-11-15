@@ -133,10 +133,11 @@
             </section>
           </div>
         </div>
-        <div class="flipBtn transition" :class="this.front ? 'black':'white'" @click="flipCard">
+        <div class="flipBtn transition" :class="this.front ? 'black':'white'" @click="flipCard" @mouseenter="goTip('on')" @mouseleave="goTip('off')">
           <svg class="icon">
             <use xlink:href="#flip"></use>
           </svg>
+          <div class="tip" v-if="askFlip">Flip Me</div>
         </div>
       </div>
     </div>
@@ -146,6 +147,7 @@
       var app = new Vue({
         el: '#app',
         data: {
+          askFlip:false,
           front:true,
           id:['#video','#uiux','#frontend'],
           getTypePrev:'#video',
@@ -241,6 +243,10 @@
                 .to('.flipBtn .icon', {scaleX: 1},'-=1')
               this.front = true
             }
+          },
+          goTip(show){
+            console.log(show);
+            show === 'on' ? this.askFlip = true : this.askFlip = false
           },
           updateCoordinates: function(e) {
             let xAxis = (window.innerWidth*.5 - e.pageX)*.03
