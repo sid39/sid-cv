@@ -56,12 +56,12 @@ body{background-color: #D1D1D1;perspective: 1000px;}
 /*back*/
 .workSection .title,.eduSection .title{font-size: 1rem;position: relative;}
 .workSection .info .squeeze,.eduSection .info .squeeze{ text-shadow: none; color: #666; font-size: 12px; transform:scale(.8) translateX(-12%) ; -webkit-transform:scale(.8) translateX(-12%) ; -moz-transform:scale(.8) translateX(-12%) ; -ms-transform:scale(.8) translateX(-12%) ; -o-transform:scale(.8) translateX(-12%) ; white-space: nowrap; }
-.listArea li{position: relative;padding: 10px 0 5px 20px;}
+.listArea li{position: relative;padding: 5px 0 5px 20px;}
 .workSection .listArea li:last-child{margin-top: -2px;}
 .workSection .listArea li:last-child::after{position: absolute;left:2px;bottom:0; content: ''; width: 5px; height: 5px; background-color: #333;}
-.listArea li::before{position: absolute;content: '';height: 86%;width: 1px;border-right: 1px solid #333;top: 25px;left: 3px;}
-.listArea .title::before{ position: absolute;left:-17px;top:8px; content: ''; width: 4px; height: 4px; background-color: #333; border-radius:50% ; -webkit-border-radius:50% ; -moz-border-radius:50% ; -ms-border-radius:50% ; -o-border-radius:50% ; }
-.listArea .title::after{ position: absolute;left:-20px;top:5px; content: ''; width: 8px; height: 8px;border: 1px solid #333; background-color: transparent; border-radius:50% ; -webkit-border-radius:50% ; -moz-border-radius:50% ; -ms-border-radius:50% ; -o-border-radius:50% ; }
+.listArea li::before{position: absolute;content: '';height: 86%;width: 1px;border-right: 1px solid #333;top: 20px;left: 3px;}
+.listArea .title::before{ position: absolute;left:-17px;top:8px; content: ''; width: 4px; height: 4px; background-color: #333; border-radius:50% ; -webkit-border-radius:50% ; -moz-border-radius:50% ; -ms-border-radius:50% ; -o-border-radius:50% ;z-index: 2; }
+.listArea .title::after{ position: absolute;left:-20px;top:5px; content: ''; width: 8px; height: 8px;border: 1px solid #333; background-color: #fff; border-radius:50% ; -webkit-border-radius:50% ; -moz-border-radius:50% ; -ms-border-radius:50% ; -o-border-radius:50% ;z-index: 1; }
 .workSection li:last-child .squeeze{white-space:break-spaces;}
 .eduSection .info:last-child .squeeze{white-space:break-spaces;}
 .eduSection .listArea li:last-child::before{display: none;}
